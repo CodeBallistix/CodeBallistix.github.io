@@ -1,0 +1,20 @@
+@charset "UTF-8";
+@font-face { font-family:"Eras Bold ITC";font-variant:normal;font-style:normal;font-weight:normal;src:url("#FontID0") format(svg)}
+.fil0 {fill:#00A6FF}
+.fil15 {fill:#FD673A}
+.fil5 {fill:url(#id0)}
+.fil3 {fill:url(#id1)}
+.fil9 {fill:url(#id2)}
+.fil10 {fill:url(#id3)}
+.fil4 {fill:url(#id4)}
+.fil12 {fill:url(#id5)}
+.fil6 {fill:url(#id6)}
+.fil7 {fill:url(#id7)}
+.fil13 {fill:url(#id8)}
+.fil2 {fill:url(#id9)}
+.fil16 {fill:url(#id10)}
+.fil8 {fill:url(#id11)}
+.fil11 {fill:url(#id12)}
+.fil1 {fill:url(#id13)}
+.fil14 {fill:url(#id14)}
+.fnt0 {font-weight:normal;font-size:48.02px;font-family:'Eras Bold ITC'}
