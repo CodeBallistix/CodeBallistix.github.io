@@ -18,7 +18,7 @@ mainSections = ["blog"]
 disableImageOptimization = false
 
 defaultBackgroundImage = "/img/background.jpg"
-defaultFeaturedImage = "/img/background.jpg"
+# defaultFeaturedImage = "/img/background.jpg"
 
 highlightCurrentMenuArea = true
 smartTOC = true
@@ -53,8 +53,8 @@ disableImageZoom = true
   showLikes = false
   showDateUpdated = false
   showAuthor = false
-  showHero = true
-  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showHero = false
+  heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background
   showBreadcrumbs = true
   showDraftLabel = false
@@ -67,7 +67,7 @@ disableImageZoom = true
   invertPagination = false
   showReadingTime = false
   showTableOfContents = false
-  showRelatedContent = true
+  showRelatedContent = false
   relatedContentLimit = 6
   showTaxonomies = true 
   showAuthorsBadges = true 
@@ -104,7 +104,7 @@ disableImageZoom = true
   cardView = false
 
 [term]
-  showHero = true
+  showHero = false
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
   showViews = true

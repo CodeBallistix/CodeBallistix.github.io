@@ -1,9 +1,10 @@
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "Blowfish"
+title = "CodeBallistix · Crafting Exceptional Software Solutions with Speed and Precision"
 
 [params]
+  siteHeader =  ""
   displayName = "EN"
   isoCode = "en"
   rtl = false
