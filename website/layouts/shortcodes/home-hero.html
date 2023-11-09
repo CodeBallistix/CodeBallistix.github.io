@@ -1,11 +1,11 @@
-<section class="w-full grid gap-8 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 ">
-    <div class="min-h-full rounded overflow-hidden relative justify-self-start place-items-baseline">
+<section class="w-full grid gap-8 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 home-hero">    
+    <div class="min-h-full rounded overflow-hidden home-hero-logo ">
         
         <div>
         {{ readFile "assets/img/logo.svg" | safeHTML}}
         </div>
     </div>
-    <div class="min-h-full min-w-full  rounded overflow-hidden relative align-middle justify-start flex items-start home-hero-typeit text-7xl" >      
+    <div class="min-h-full rounded overflow-hidden home-hero-text " >      
             {{ .Inner }}
     </div>
 </section>

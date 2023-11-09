@@ -3,11 +3,12 @@ layout: "simple"
 ---
 
 {{< home-hero >}}
-{{< typeit classList="text-7xl" lifeLike=true breakLines=false loop=true >}}
-Quick<br/>Precise<br/>Decisive{{< /typeit >}}
+QUICK<br/>
+PRECISE<br/>
+DECISIVE
 {{< /home-hero >}}
 
-Specialty in full-stack development, NLP, open-source language models, DevOps, and security. Committed to delivering excellence that drives your business forward.
+<!-- Specialty in full-stack development, NLP, open-source language models, DevOps, and security. Committed to delivering excellence that drives your business forward. -->
 
 {{< list-card title="Our Expertise" limit=8 where="Type" value="services" >}}
 

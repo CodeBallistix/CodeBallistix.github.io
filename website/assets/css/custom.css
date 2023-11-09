@@ -7,35 +7,67 @@ html{
 }
 
 .logo{
-  max-width: 12rem;
+  max-height: 12rem;
 }
 
-.home-logo {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  align-content: center;
+.home-hero{
+  display: flexbox;
+}
+
+.home-hero-logo{
+  text-align: center;
+  display: flexbox;
   justify-content: center;
+  flex-grow: 1;
+  min-width: 300px;
+  max-height: 300px;
 }
 
-.header-logo-scroll{
-  height:100px;
+.home-hero-logo svg{
+  text-align: center;
+  justify-content: center;
+  min-width: 300px;
+  max-height: max-content;
+  max-height: 300px;
 }
 
-.header-logo-scroll a{
-  display: none;
-}
 
-.home-hero-typeit div, .home-hero-typeit div .ti-cursor{
-  font-size: 15vw;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+.home-hero-text{
+  text-align: left;
+  display: flexbox;
+  justify-content: center;
+  /* flex-grow: 1; */
+  min-width: 300px;
+  max-height: 300px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bolder;
+  line-height: normal;
+  font-size: 15vw;
+  color: #FD673A;
 }
+
+
+@media only screen and (min-width: 560px) {
+  .home-hero-text{
+    font-size: 8vw;
+    min-height: 300px;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
-  .home-hero-typeit div, .home-hero-typeit div .ti-cursor{
-    font-size: 2.25vw;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    font-weight: bolder;
+  .home-hero-text{
+    font-size: 6vw;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .home-hero-text{
+    font-size: 5vw;
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  .home-hero-text{
+    font-size: 4vw;
   }
 }
