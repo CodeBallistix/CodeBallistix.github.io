@@ -5,7 +5,7 @@
 {{ $where := .Get "where" }}
 {{ $value := .Get "value" }}
 <h2 class="mt-20 text-2xl font-extrabold mb-10">{{ $title }}</h2>
-<section class="w-full grid gap-8 sm:grid-cols-2 md:grid-cols-4">
+<section class="w-full grid gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 text-center">
     {{ if $where }}
         {{ range ( where .Site.RegularPages $where $value | first $limit ) }}
             {{ if not (eq .RelPermalink $parent) }}

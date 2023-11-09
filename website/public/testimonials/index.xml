@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Testimonials on CodeBallistix · Crafting Exceptional Software Solutions with Speed and Precision</title>
+    <link>https://nunocoracao.github.io/blowfish/testimonials/</link>
+    <description>Recent content in Testimonials on CodeBallistix · Crafting Exceptional Software Solutions with Speed and Precision</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2023 Code Ballistix</copyright>
+    <atom:link href="https://nunocoracao.github.io/blowfish/testimonials/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ApTech</title>
+      <link>https://nunocoracao.github.io/blowfish/testimonials/aptech/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nunocoracao.github.io/blowfish/testimonials/aptech/</guid>
+      <description>AWESOME JOB!!!!!!!!!!!!!!!!!!!</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://nunocoracao.github.io/blowfish/testimonials/aptech/feature.png" />
+    </item>
+    
+    <item>
+      <title>Quidich Innovation Labs</title>
+      <link>https://nunocoracao.github.io/blowfish/testimonials/quidich/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nunocoracao.github.io/blowfish/testimonials/quidich/</guid>
+      <description>AWESOME JOB!!!!!!!!!!!!!!!!!!!</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://nunocoracao.github.io/blowfish/testimonials/quidich/feature.png" />
+    </item>
+    
+    <item>
+      <title>Wowso.me</title>
+      <link>https://nunocoracao.github.io/blowfish/testimonials/wowsome/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nunocoracao.github.io/blowfish/testimonials/wowsome/</guid>
+      <description>AWESOME JOB!!!!!!!!!!!!!!!!!!!</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://nunocoracao.github.io/blowfish/testimonials/wowsome/feature.webp" />
+    </item>
+    
+  </channel>
+</rss>

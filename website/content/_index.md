@@ -2,7 +2,11 @@
 layout: "simple"
 ---
 
-<!-- We have a combined experience of 24 years, and believe in rapid prototyping and quick deployment. -->
+
+{{< figure-center >}}
+{{< figure src="img/logo.png" >}}
+{{< /figure-center>}}
+
 
 **Welcome to CodeBallistix, your gateway to digital mastery. Specializing in full-stack development, NLP, open-source language models, DevOps, and security, we are committed to delivering excellence that drives your business forward. Explore our services for a transformative journey.**
 
