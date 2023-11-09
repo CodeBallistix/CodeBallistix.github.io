@@ -10,11 +10,32 @@ html{
   max-width: 12rem;
 }
 
-.img-center {
+.home-logo {
   display: flex;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
   align-content: center;
   justify-content: center;
+}
+
+.header-logo-scroll{
+  height:100px;
+}
+
+.header-logo-scroll a{
+  display: none;
+}
+
+.home-hero-typeit div, .home-hero-typeit div .ti-cursor{
+  font-size: 15vw;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-weight: bolder;
+}
+@media only screen and (min-width: 1024px) {
+  .home-hero-typeit div, .home-hero-typeit div .ti-cursor{
+    font-size: 2.25vw;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-weight: bolder;
+  }
 }
