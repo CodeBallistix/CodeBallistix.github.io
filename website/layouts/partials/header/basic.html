@@ -3,27 +3,29 @@
     {{ if .Site.Params.Logo }}
     {{ $logo := resources.Get .Site.Params.Logo }}
     {{ if $logo }}
+    {{ if (.Page.IsHome) }}
     <script>
         $(window).scroll(function() {
-            if ($(this).scrollTop() > 250) {
+            if ($(this).scrollTop() > 300) {
                 $('.header-logo-scroll a').fadeIn();
             } else {
               $('.header-logo-scroll a').fadeOut();
             }
           });
     </script>
-    <div class="header-logo-scroll">
+    <div class="header-logo-scroll" >
+    {{ else }}
+    <div>
+    {{ end }}
         <a href="{{ "" | relLangURL }}" class="flex">
             <span class="sr-only">{{ .Site.Title | markdownify | emojify }}</span>
-
-            <img id="headerLogo" src="{{ $logo.RelPermalink }}" width="{{ div $logo.Width 2 }}" height="{{ div $logo.Height 2 }}"
-                class="logo max-h-[5rem] max-w-[5rem] object-scale-down object-left nozoom" alt="{{ .Site.Title }}" />
-
+            <img id="headerLogo" src="{{ $logo.RelPermalink }}" style="height: 100px"
+                class="logo object-scale-down object-left nozoom" alt="{{ .Site.Title }}" />
         </a>
     </div>
     {{ end }}
     {{- end }}
-    <div class="flex flex-1 items-center justify-between">
+    <div class="flex flex-1 items-center justify-between h-24">
         <nav class="flex space-x-3">
 
             {{/*  <a href="{{ "" | relLangURL }}" class="text-base font-medium text-gray-500 hover:text-gray-900">{{  */}}

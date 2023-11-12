@@ -1,0 +1,17 @@
+{{ $disableImageOptimization := .Page.Site.Params.disableImageOptimization | default false }}
+{{ with .Params.externalUrl }}
+<a href="{{ . }}" target="_blank" rel="external" class="min-w-full">
+{{ else }}
+<a href="{{ .RelPermalink }}" class="min-w-full">
+{{ end }}
+    <div class="p-6 rounded shadow-md dark:bg-gray-900">
+        <p>An audire commodo habemus cum. Ne sed corrumpit repudiandae. Tota aliquip democritum pro in, nec democritum intellegam ne. Propriae volutpat dissentiet ea sit, nec at lorem inani tritani, an ius populo perfecto vituperatoribus. Eu cum case modus salutandi, ut eum vocent sensibus reprehendunt.</p>
+        <div class="flex items-center mt-4 space-x-4">
+            <img src="https://source.unsplash.com/50x50/?portrait?1" alt="" class="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500">
+            <div>
+                <p class="text-lg font-semibold">Leroy Jenkins</p>
+                <p class="text-sm dark:text-gray-400">CTO of Company Co.</p>
+            </div>
+        </div>
+    </div>
+</a>

@@ -5,7 +5,7 @@
 # Refer to the theme docs for more details about each of these parameters.
 # https://blowfish.page/docs/configuration/#theme-parameters
 
-colorScheme = "blowfish"
+colorScheme = "ballistic"
 defaultAppearance = "dark" # valid options: light or dark
 autoSwitchAppearance = false
 
@@ -41,7 +41,7 @@ disableImageZoom = true
   homepageImage = "/img/background.jpg" # used in: hero, and card
   showRecent = false
   showRecentItems = 4
-  showMoreLink = true
+  showMoreLink = false
   showMoreLinkDest = "blog"
   cardView = true
   cardViewScreenWidth = false
@@ -66,7 +66,7 @@ disableImageZoom = true
   showPagination = true
   invertPagination = false
   showReadingTime = false
-  showTableOfContents = false
+  showTableOfContents = true
   showRelatedContent = false
   relatedContentLimit = 6
   showTaxonomies = true 
@@ -75,7 +75,7 @@ disableImageZoom = true
   #sharingLinks = [ "linkedin", "twitter", "reddit", "whatsapp", "telegram", "pinterest", "facebook", "email"]
 
 [list]
-  showHero = true
+  showHero = false
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background
   layoutBackgroundHeaderSpace = false

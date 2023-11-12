@@ -6,7 +6,6 @@ module.exports = {
     "./themes/blowfish/content/**/*.{html,md}",
     "./node_modules/tw-elements/dist/js/**/*.js"
   ],
-  jit: true,
   darkMode: "class",
   theme: {
     screens: {
@@ -60,8 +59,8 @@ module.exports = {
       typography: ({ theme }) => ({
         DEFAULT: {
           css: {
-            "--tw-prose-body": theme("colors.neutral.700 / 1"),
-            "--tw-prose-headings": theme("colors.neutral.800 / 1"),
+            "--tw-prose-body": theme("colors.neutral.900 / 1"),
+            "--tw-prose-headings": theme("colors.primary.500 / 1"),
             "--tw-prose-lead": theme("colors.neutral.500 / 1"),
             "--tw-prose-links": theme("colors.primary.600 / 1"),
             "--tw-prose-bold": theme("colors.neutral.900 / 1"),
@@ -76,8 +75,8 @@ module.exports = {
             "--tw-prose-pre-bg": theme("colors.neutral.50 / 1"),
             "--tw-prose-th-borders": theme("colors.neutral.500 / 1"),
             "--tw-prose-td-borders": theme("colors.neutral.300 / 1"),
-            "--tw-prose-invert-body": theme("colors.neutral.300 / 1"),
-            "--tw-prose-invert-headings": theme("colors.neutral.50 / 1"),
+            "--tw-prose-invert-body": theme("colors.neutral.100 / 1"),
+            "--tw-prose-invert-headings": theme("colors.secondary.500 / 1"),
             "--tw-prose-invert-lead": theme("colors.neutral.500 / 1"),
             "--tw-prose-invert-links": theme("colors.primary.400 / 1"),
             "--tw-prose-invert-bold": theme("colors.neutral.DEFAULT / 1"),

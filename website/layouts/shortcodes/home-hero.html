@@ -1,11 +1,13 @@
 <section class="w-full grid gap-8 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 home-hero">    
     <div class="min-h-full rounded overflow-hidden home-hero-logo ">
         
-        <div>
+        {{/*  <div>  */}}
         {{ readFile "assets/img/logo.svg" | safeHTML}}
-        </div>
+        {{/*  </div>  */}}
     </div>
-    <div class="min-h-full rounded overflow-hidden home-hero-text " >      
+    <div class="min-h-full rounded overflow-hidden home-hero-text " >
+        <div>
             {{ .Inner }}
+        </div>      
     </div>
 </section>

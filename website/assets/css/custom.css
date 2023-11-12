@@ -11,63 +11,56 @@ html{
 }
 
 .home-hero{
-  display: flexbox;
-}
+  display: grid;
+} 
+ .header-logo-scroll a{
+  display: none;
+ }
 
 .home-hero-logo{
-  text-align: center;
   display: flexbox;
   justify-content: center;
-  flex-grow: 1;
-  min-width: 300px;
-  max-height: 300px;
+  align-content: center;
 }
 
-.home-hero-logo svg{
-  text-align: center;
-  justify-content: center;
-  min-width: 300px;
-  max-height: max-content;
-  max-height: 300px;
+.home-hero-logo div svg{
+  min-height: 150px;
+  justify-self: center;
 }
-
 
 .home-hero-text{
-  text-align: left;
-  display: flexbox;
+  display: felxbox;
+  
   justify-content: center;
-  /* flex-grow: 1; */
-  min-width: 300px;
-  max-height: 300px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  align-content: center;
+  
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
   font-weight: bolder;
   line-height: normal;
-  font-size: 15vw;
-  color: #FD673A;
+  font-size: 3rem;
+  color: rgba(var(--color-secondary-500));
 }
-
 
 @media only screen and (min-width: 560px) {
   .home-hero-text{
-    font-size: 8vw;
-    min-height: 300px;
+    font-size: 4rem;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .home-hero-text{
-    font-size: 6vw;
+    font-size: 3rem;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .home-hero-text{
-    font-size: 5vw;
+    font-size: 4rem;
   }
 }
 
 @media only screen and (min-width: 1536px) {
   .home-hero-text{
-    font-size: 4vw;
+    font-size: 4.3rem;
   }
 }
