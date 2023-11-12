@@ -3,21 +3,23 @@
 {{ $parent := .Page.RelPermalink }}
 {{ $where := .Get "where" }}
 {{ $value := .Get "value" }}
-<section class="dark:bg-gray-800 dark:text-gray-100">
-	<div class="container px-6 py-12 mx-auto">
-		<div class="grid items-center gap-4 xl:grid-cols-5">
-			<div class="max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left">
-				<h2 class="text-4xl font-bold">{{ $title }}</h2>
-				<p class="dark:text-gray-400">
-                    An audire commodo habemus cum. Ne sed corrumpit repudiandae. Tota aliquip democritum pro in, nec democritum intellegam ne. Propriae volutpat dissentiet ea sit, nec at lorem inani tritani, an ius populo perfecto vituperatoribus. Eu cum case modus salutandi, ut eum vocent sensibus reprehendunt.
-                </p>
-			</div>
+<section class="bg-white">
+    <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <h2
+            class="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"
+        >
+            {{ $title }}
+        </h2>
+
+        <div
+            class="mt-8 [column-fill:_balance] sm:columns-2 sm:gap-6 lg:columns-3 lg:gap-8"
+        >
             {{ if $where }}
-            {{ range ( where .Site.RegularPages $where $value | first $limit ) }}
-                {{ if not (eq .RelPermalink $parent) }}
-                    {{ partial "testimonial.html" . }}
-                {{ end }}
-            {{end}}
+                {{ range ( where .Site.RegularPages $where $value | first $limit ) }}
+                    {{ if not (eq .RelPermalink $parent) }}
+                        {{ partial "testimonial.html" . }}
+                    {{ end }}
+                {{end}}
             {{ else }}
                 {{ range .Site.RegularPages | first $limit }}
                     {{ if not (eq .RelPermalink $parent) }}
@@ -27,4 +29,4 @@
             {{ end }}
         </div>
     </div>
-</section>
+  </section>
