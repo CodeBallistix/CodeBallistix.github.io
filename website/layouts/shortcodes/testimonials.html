@@ -4,7 +4,7 @@
 {{ $where := .Get "where" }}
 {{ $value := .Get "value" }}
 <section class="bg-white">
-    <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+    <div class="w-full">
         <h2
             class="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"
         >
@@ -12,7 +12,7 @@
         </h2>
 
         <div
-            class="mt-8 [column-fill:_balance] sm:columns-2 sm:gap-6 lg:columns-3 lg:gap-8"
+            class="mt-8 [column-fill:_balance] sm:gap-6  md:columns-2 sm:columns-1 xl:columns-3 2xl:columns-3 lg:columns-2 lg:gap-8"
         >
             {{ if $where }}
                 {{ range ( where .Site.RegularPages $where $value | first $limit ) }}
