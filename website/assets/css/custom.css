@@ -29,7 +29,7 @@ html{
 }
 
 .home-hero-text{
-  display: felxbox;
+  display: flexbox;
   
   justify-content: center;
   align-content: center;

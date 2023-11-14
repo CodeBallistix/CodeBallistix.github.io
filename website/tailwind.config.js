@@ -8,6 +8,9 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
+    backgroundImage: {
+      'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+    },
     screens: {
       'sm': '640px',
       'md': '853px',
