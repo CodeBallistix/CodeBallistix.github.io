@@ -60,7 +60,7 @@ disableImageZoom = true
   showDraftLabel = false
   showEdit = false
   editURL = "https://github.com/nunocoracao/blowfish/tree/main/exampleSite/content"
-  editAppendPath = true
+  editAppendPath = false
   seriesOpened = false
   showHeadingAnchors = true
   showPagination = true
@@ -70,7 +70,7 @@ disableImageZoom = true
   showRelatedContent = false
   relatedContentLimit = 6
   showTaxonomies = true 
-  showAuthorsBadges = true 
+  showAuthorsBadges = false
   showWordCount = false
   #sharingLinks = [ "linkedin", "twitter", "reddit", "whatsapp", "telegram", "pinterest", "facebook", "email"]
 

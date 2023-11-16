@@ -4,7 +4,7 @@
   {{ else }}
   <a href="{{ .RelPermalink }}" class="min-w-full">
     {{ end }}
-    <div class="min-h-full border-neutral-200 dark:border-neutral-400 border-2 rounded-xl overflow-hidden shadow-2xl relative backdrop-blur dark:bg-neutral-500 dark:bg-opacity-50"
+    <div class="min-h-full border-neutral-200 dark:border-neutral-400 border-2 rounded-xl overflow-hidden shadow-2xl relative backdrop-blur dark:bg-neutral-800 dark:bg-opacity-50"
       >
 
       {{- with $.Params.images -}}
@@ -44,7 +44,7 @@
         {{ with .Params.externalUrl }}
         <div>
           <div
-            class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral article-card-title">
+            class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral">
             {{ $.Title | emojify }}
             <span class="text-xs align-top cursor-default text-neutral-400 dark:text-neutral-500">
               <span class="rtl:hidden">&#8599;</span>
@@ -53,13 +53,13 @@
           </div>
         </div>
         {{ else }}
-        <div class="font-bold text-xl text-primary-500 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-secondary-400 article-card-title"
+        <div class="font-bold text-xl text-primary-500 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-secondary-400"
           href="{{ .RelPermalink }}">{{ .Title | emojify }}</div>
         {{ end }}
 
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+        {{/*  <div class="text-sm text-neutral-500 dark:text-neutral-400 text-center items-center flex flex-wrap">  */}}
           {{ partial "article-meta/basic.html" . }}
-        </div>
+        {{/*  </div>  */}}
 
         {{ if .Params.showSummary | default (.Site.Params.list.showSummary | default false) }}
         <div class="py-1 prose dark:prose-invert">

@@ -2,6 +2,7 @@
 title: "Cloud Engineering"
 type: "services"
 summary: "Our cloud expertise ensures you're getting the most out of **AWS, GCP, & Azure**."
+tags: [AWS, GCP, Azure, Cloud-Native, Multi-Cloud Strategy, Security Posture Management, Performance Engineering]
 weight: 40
 ---
 

@@ -70,25 +70,6 @@ html{
   text-justify: inter-word;
 }
 
-.prose h1, .prose h2, .prose h3, .prose h4 {
-  text-align: center;
-  border-width: 2px;
-  border-radius: 0.75rem/* 12px */;
-  
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  padding: 10px;
-  --tw-backdrop-blur: blur(8px);
-  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-  background-color: rgba(var(--color-neutral-100), var(--tw-bg-opacity));
-}
-
-:is(.dark .prose h2) {
-  --tw-bg-opacity: 1;
-  background-color: rgba(var(--color-neutral-900), var(--tw-bg-opacity));
-}
-
 .prose strong{
   color: rgba(var(--color-primary-500));
 }
