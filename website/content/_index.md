@@ -33,5 +33,3 @@ Individually we hold the following certifications:
 
 ## Contact Us
 {{< typeform >}}
-
-{{< google-form >}}
