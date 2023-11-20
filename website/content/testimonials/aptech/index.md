@@ -1,10 +1,10 @@
 ---
 title: "ApTech"
 type: "testimonials"
-summary: "AWESOME JOB!!!!!!!!!!!!!!!!!!! AWESOME JOB!!!!!!!!!!!!!!!!!!! AWESOME JOB!!!!!!!!!!!!!!!!!!! AWESOME JOB!!!!!!!!!!!!!!!!!!! AWESOME JOB!!!!!!!!!!!!!!!!!!! AWESOME JOB!!!!!!!!!!!!!!!!!!! AWESOME JOB!!!!!!!!!!!!!!!!!!! "
+summary: "Nicely Done!"
 weight: 40
 author: "Aptech"
 stars: 5
 ---
 
-Something nice!
+Code Ballistix delivered a superb Django backend for our AR mobile app, featuring a seamless Django Admin interface that revolutionized our content management. Their expertise and tailored approach greatly enhanced our app's functionality and user experience.
