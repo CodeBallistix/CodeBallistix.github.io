@@ -129,3 +129,6 @@ website/.yarn/build-state.yml
 website/.yarn/install-state.gz
 website/.pnp.*
 
+website/public
+
+website/public/*
