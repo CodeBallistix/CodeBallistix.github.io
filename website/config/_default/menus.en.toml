@@ -13,13 +13,22 @@
 [[main]]
   name = "Blog"
   pageRef = "blog"
-  weight = 10
+  weight = 30
 
-#[[main]]
-#  name = "Posts"
-#  parent = "Blog"
-#  pageRef = "blog"
-#  weight = 10
+[[main]]
+  name = "About"
+  url = "/#about-us"
+  weight = 20
+
+[[main]]
+  name = "Certifications"
+  url = "/#certifications"
+  weight = 20
+
+[[main]]
+  name = "Contact"
+  url = "/#contact-us"
+  weight = 20
 
 #[[main]]
 #  name = "Tags"

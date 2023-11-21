@@ -33,7 +33,7 @@ disableImageZoom = true
   showMenu = true
   showCopyright = true
   showThemeAttribution = false
-  showAppearanceSwitcher = false
+  showAppearanceSwitcher = true
   showScrollToTop = true
 
 [homepage]
@@ -79,7 +79,7 @@ disableImageZoom = true
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background
   layoutBackgroundHeaderSpace = false
-  showBreadcrumbs = false
+  showBreadcrumbs = true
   showSummary = true
   showViews = false
   showLikes = false

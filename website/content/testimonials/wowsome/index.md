@@ -1,7 +1,7 @@
 ---
 title: "Wowso.me"
 type: "testimonials"
-summary: ""
+summary: "Seamless Performance and Robust API"
 weight: 40
 stars: 4
 
