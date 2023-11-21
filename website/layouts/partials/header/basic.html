@@ -1,26 +1,28 @@
-<div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+<div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px" id="background-blur"
     class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
     {{ if .Site.Params.Logo }}
     {{ $logo := resources.Get .Site.Params.Logo }}
     {{ if $logo }}
-    {{ if (.Page.IsHome) }}
-    <script>
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 300) {
-                $('.header-logo-scroll a').fadeIn();
-            } else {
-              $('.header-logo-scroll a').fadeOut();
-            }
-          });
-    </script>
-    <div class="header-logo-scroll" >
+    {{ if .IsHome }}
+    <div class="header-logo-scroll">
+        <script>
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 300) {
+                    $('.header-logo-scroll a').fadeIn();
+                } else {
+                  $('.header-logo-scroll a').fadeOut();
+                }
+              });
+        </script>
     {{ else }}
-    <div>
+    <div class="">
     {{ end }}
         <a href="{{ "" | relLangURL }}" class="flex">
             <span class="sr-only">{{ .Site.Title | markdownify | emojify }}</span>
-            <img id="headerLogo" src="{{ $logo.RelPermalink }}" style="height: 50px"
-                class="logo object-scale-down object-left nozoom" alt="{{ .Site.Title }}" />
+
+            <img src="{{ $logo.RelPermalink }}" width="{{ div $logo.Width 2 }}" height="{{ div $logo.Height 2 }}"
+                class="logo max-h-[5rem] max-w-[5rem] object-scale-down object-left nozoom" alt="{{ .Site.Title }}" />
+
         </a>
     </div>
     {{ end }}
@@ -28,9 +30,9 @@
     <div class="flex flex-1 items-center justify-between">
         <nav class="flex space-x-3">
 
-            {{/*  <a href="{{ "" | relLangURL }}" class="text-base font-medium text-gray-500 hover:text-gray-900">{{  */}}
-                {{/*  .Site.Title | markdownify  */}}
-                {{/*  | emojify }}</a>  */}}
+            {{/*  <a href="{{ "" | relLangURL }}" class="text-base font-medium text-gray-500 hover:text-gray-900">{{
+                .Site.Title | markdownify
+                | emojify }}</a>  */}}
 
 
         </nav>

@@ -1,7 +1,3 @@
-.gap-8 {
-  gap: 2rem;
-}
-
 html{
   font-size: 14pt;
 }
@@ -13,7 +9,7 @@ html{
 .home-hero{
   display: grid;
 } 
- .header-logo-scroll a{
+.header-logo-scroll a{
   display: none;
  }
 
