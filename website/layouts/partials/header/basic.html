@@ -19,13 +19,13 @@
     {{ end }}
         <a href="{{ "" | relLangURL }}" class="flex">
             <span class="sr-only">{{ .Site.Title | markdownify | emojify }}</span>
-            <img id="headerLogo" src="{{ $logo.RelPermalink }}" style="height: 100px"
+            <img id="headerLogo" src="{{ $logo.RelPermalink }}" style="height: 50px"
                 class="logo object-scale-down object-left nozoom" alt="{{ .Site.Title }}" />
         </a>
     </div>
     {{ end }}
     {{- end }}
-    <div class="flex flex-1 items-center justify-between h-24">
+    <div class="flex flex-1 items-center justify-between">
         <nav class="flex space-x-3">
 
             {{/*  <a href="{{ "" | relLangURL }}" class="text-base font-medium text-gray-500 hover:text-gray-900">{{  */}}

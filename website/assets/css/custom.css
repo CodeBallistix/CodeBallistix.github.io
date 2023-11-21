@@ -24,7 +24,7 @@ html{
 }
 
 .home-hero-logo div svg{
-  min-height: 150px;
+  min-height: 50px;
   justify-self: center;
 }
 
@@ -77,3 +77,4 @@ html{
 :is(.dark .prose strong){
   color: rgba(var(--color-secondary-500));
 }
+

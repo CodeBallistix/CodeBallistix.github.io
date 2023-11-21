@@ -91,7 +91,7 @@ disableImageZoom = true
   constrainItemsWidth = false
 
 [sitemap]
-  excludedKinds = []
+  excludedKinds = ["testimonials"]
 
 [taxonomy]
   showTermCount = true
