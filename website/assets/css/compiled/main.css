@@ -1337,10 +1337,6 @@ select {
   visibility: hidden;
 }
 
-.static {
-  position: static;
-}
-
 .fixed {
   position: fixed;
 }
@@ -4979,6 +4975,10 @@ body:has(#menu-controller:checked) {
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:min-w-full {
+    min-width: 100%;
   }
 
   .md\:columns-2 {
