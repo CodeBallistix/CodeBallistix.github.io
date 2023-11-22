@@ -74,3 +74,8 @@ html{
   color: rgba(var(--color-secondary-500));
 }
 
+
+.prose table{
+  width: max-content;
+  max-width: inherit;
+}
