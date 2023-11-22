@@ -6,6 +6,8 @@ summary: "Learn about creating documents in the markdown language."
 description: "Learn about creating documents in the markdown language."
 slug: "using-markdown"
 tags: ["markdown", "md", "document"]
+series: ["Markdown"]
+series_order: 1
 ---
 {{< lead >}}
 **Markdown** is a simple way to make text look nice without fancy editors or HTML. It adds headings, lists, and links to plain text, and it works the same on different devices.
@@ -68,6 +70,52 @@ The blockquote element represents content that is quoted.
 > Tiam, ad mint andaepu dandae nostion secatur sequo quae.
 > **Note** that you can use _Markdown syntax_ within a blockquote.
 
+### Multiple Paragraphs
+
+Blockquotes can contain multiple paragraphs. Add a `>` on the blank lines between the paragraphs.
+
+{{< highlight md >}}
+> Dorothy followed her through many of the beautiful rooms in her castle.
+>
+> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+{{< /highlight >}}
+
+> Dorothy followed her through many of the beautiful rooms in her castle.
+>
+> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+
+### Nested Blockquotes
+
+Blockquotes can be nested. Add a `>>` in front of the paragraph you want to nest.
+
+{{< highlight md >}}
+> Dorothy followed her through many of the beautiful rooms in her castle.
+>
+>> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+{{< /highlight >}}
+
+> Dorothy followed her through many of the beautiful rooms in her castle.
+>
+>> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+
+### Blockquotes with other elements
+
+{{< highlight md >}}
+> #### The quarterly results look great!
+>
+> - Revenue was off the chart.
+> - Profits were higher than ever.
+>
+>  *Everything* is going according to **plan**.
+{{< /highlight >}}
+
+> #### The quarterly results look great!
+>
+> - Revenue was off the chart.
+> - Profits were higher than ever.
+>
+>  *Everything* is going according to **plan**.
+
 ## Tables
 
 Tables aren't part of the core Markdown spec, but many content platforms support it.
@@ -96,19 +144,45 @@ Tables aren't part of the core Markdown spec, but many content platforms support
 | --------- | -------- | ------ |
 | _italics_ | **bold** | `code` |
 
-## Code Blocks
+## Code
+
+To denote a word or phrase as code, enclose it in backticks (`).
 
 {{< highlight md >}}
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Example HTML5 Document</title>
-  </head>
-  <body>
-    <p>Test</p>
-  </body>
-</html>
+At the command prompt, type `nano`.
+{{< /highlight >}}
+
+At the command prompt, type `nano`.
+
+### Escaping Backticks
+
+If the word or phrase you want to denote as code includes one or more backticks, you can escape it by enclosing the word or phrase in double backticks (``).
+
+{{< highlight md >}}
+``Use `code` in your Markdown file.``
+{{< /highlight >}}
+
+``Use `code` in your Markdown file.``
+
+
+
+## Code Blocks
+
+To create code blocks, indent every line of the block by at least four spaces or one tab.
+
+{{< highlight md >}}
+
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8" />
+        <title>Example HTML5 Document</title>
+      </head>
+      <body>
+        <p>Test</p>
+      </body>
+    </html>
+
 {{< /highlight >}}
 
 ```html
@@ -122,6 +196,27 @@ Tables aren't part of the core Markdown spec, but many content platforms support
     <p>Test</p>
   </body>
 </html>
+```
+
+The basic Markdown syntax allows you to create code blocks by indenting lines by four spaces or one tab. If you find that inconvenient, try using fenced code blocks. Depending on your Markdown processor or editor, you’ll use three backticks (```) or three tildes (~~~) on the lines before and after the code block. The best part? You don’t have to indent any lines!
+
+
+{{< highlight md >}}
+```
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
+{{< /highlight >}}
+
+```json
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
 ```
 
 ## List Types
@@ -172,3 +267,99 @@ Tables aren't part of the core Markdown spec, but many content platforms support
   - Milk
   - Cheese
 
+### Adding Elements in the Lists
+
+To add another element in a list while preserving the continuity of the list, indent the element four spaces or one tab, as shown in the following examples.
+
+> **Tip:** If things don't appear the way you expect, double check that you've indented the elements in the list four spaces or one tab.
+
+#### Paragraphs
+
+{{< highlight md >}}
+* This is the first list item.
+* Here's the second list item.
+
+    I need to add another paragraph below the second list item.
+
+* And here's the third list item.
+{{< /highlight >}}
+
+* This is the first list item.
+* Here's the second list item.
+
+    I need to add another paragraph below the second list item.
+
+* And here's the third list item.
+
+**For Ordered Lists:**
+
+{{< highlight md >}}
+1. This is the first list item.
+1. Here's the second list item.
+
+    I need to add another paragraph below the second list item.
+
+1. And here's the third list item.
+{{< /highlight >}}
+
+1. This is the first list item.
+1. Here's the second list item.
+
+    I need to add another paragraph below the second list item.
+
+1. And here's the third list item.
+
+#### Blockquotes
+
+{{< highlight md >}}
+* This is the first list item.
+* Here's the second list item.
+
+    > A blockquote would look great below the second list item.
+
+* And here's the third list item.
+{{< /highlight >}}
+
+* This is the first list item.
+* Here's the second list item.
+
+    > A blockquote would look great below the second list item.
+
+* And here's the third list item.
+
+## Images
+
+{{< highlight md >}}
+1. Open the file containing the Linux mascot.
+2. Marvel at its beauty.
+
+    ![CodeBallistix Logo](./logo.png)
+
+3. Close the file.
+{{< /highlight >}}
+
+1. Open the file containing the CodeBallistix Logo.
+2. Ponder on it.
+
+    ![CodeBallistix Logo](./logo.png)
+
+3. Close the file.
+
+## Horizontal Rules
+
+To create a horizontal rule, use three or more asterisks (***), dashes (---), or underscores (___) on a line by themselves.
+
+{{< highlight md >}}
+***
+
+---
+
+_________________
+{{< /highlight >}}
+
+
+***
+
+---
+
+_________________

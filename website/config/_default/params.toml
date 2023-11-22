@@ -22,7 +22,7 @@ defaultBackgroundImage = "/img/background.jpg"
 
 highlightCurrentMenuArea = true
 smartTOC = true
-smartTOCHideUnfocusedChildren = false
+smartTOCHideUnfocusedChildren = true
 disableImageZoom = true
 
 [header]
@@ -96,22 +96,22 @@ disableImageZoom = true
 [taxonomy]
   showTermCount = true
   showHero = true
-  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
-  showViews = true
-  showLikes = true
-  showTableOfContents = true
+  showViews = false
+  showLikes = false
+  showTableOfContents = false
   cardView = false
 
 [term]
   showHero = false
-  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
-  showViews = true
-  showLikes = true
-  showTableOfContents = true
+  showViews = false
+  showLikes = false
+  showTableOfContents = false
   groupByYear = false
-  cardView = true
+  cardView = false
   cardViewScreenWidth = false
   
 #[firebase]
