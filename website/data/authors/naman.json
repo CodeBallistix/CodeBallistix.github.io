@@ -1,0 +1,9 @@
+{
+    "name": "Naman Varma",
+    "image" : "img/authors/naman.jpg",
+    "bio": "Full Stack Development, Mobile Application Engineering and System Design",
+    "headline": "Full Stack Development, Mobile Application Engineering and System Design",
+    "social": [
+        { "linkedin": "https://www.linkedin.com/in/naman-varma-65657048/" }
+    ]
+}
