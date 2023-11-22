@@ -132,3 +132,5 @@ website/.pnp.*
 website/public
 
 website/public/*
+
+website/resources/_gen/*

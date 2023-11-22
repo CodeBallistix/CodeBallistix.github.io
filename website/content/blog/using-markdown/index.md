@@ -1,26 +1,21 @@
 ---
-title: "The md Document Format: Markdown 101"
+title: "Markdown - Basic Usage"
 date: 2023-11-21
 draft: false
-summary: "Learn about creating documents in the markdown language."
+summary: "Learn about creating documents in the markdown markup language."
 description: "Learn about creating documents in the markdown language."
 slug: "using-markdown"
 tags: [markdown, md, document, headings, paragraph, blockquote, image, table, code, block, list, html, rule, horizontal, escape, escaping, characters,  cheatsheet, examples]
 series: ["Markdown"]
-series_order: 1
+series_order: 2
 showAuthor: true
 authors:
   - mrinank
-  - naman
-  - deepak
-showAuthorBadges: false
+showAuthorBadges: true
 ---
 {{< lead >}}
 **Markdown** is a simple way to make text look nice without fancy editors or HTML. It adds headings, lists, and links to plain text, and it works the same on different devices.
 {{< /lead >}}
-
-# Brief Introduction to Markdown 
-It was created by John Gruber and Aaron Swartz in 2004, aiming to provide a simple way for non-programmers to write content in a format that could be easily converted to HTML. Markdown allows users to add formatting elements like headings, lists, and links using plain text, making it accessible and user-friendly. Over time, Markdown has become widely adopted for various applications, including writing documentation, creating web content, blogging, instant messaging and collaborating on coding projects. It has gained popularity due to its simplicity, readability, and versatility.
 
 # Cheatsheet and Examples
 
