@@ -5,9 +5,15 @@ draft: false
 summary: "Learn about creating documents in the markdown language."
 description: "Learn about creating documents in the markdown language."
 slug: "using-markdown"
-tags: ["markdown", "md", "document"]
+tags: [markdown, md, document, headings, paragraph, blockquote, image, table, code, block, list, html, rule, horizontal, escape, escaping, characters,  cheatsheet, examples]
 series: ["Markdown"]
 series_order: 1
+showAuthor: true
+authors:
+  - mrinank
+  - naman
+  - deepak
+showAuthorBadges: false
 ---
 {{< lead >}}
 **Markdown** is a simple way to make text look nice without fancy editors or HTML. It adds headings, lists, and links to plain text, and it works the same on different devices.

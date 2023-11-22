@@ -14,13 +14,3 @@ title = "CodeBallistix · Crafting Exceptional Software Solutions with Speed and
   description = "A powerful, lightweight theme for Hugo built with Tailwind CSS."
   # copyright = "Copy, _right?_ :thinking_face:"
 
-[author]
-  name = "Code Ballistix"
-  image = "img/logo.png"
-  headline = "Quick, Precise and Decisive<br/>Software Developmnent"
-  bio = "Quick, Precise and Decisive<br/>Software Developmnent"
-  links = [
-    { github = "https://github.com/CodeBallistix" },
-  ]
-
-  

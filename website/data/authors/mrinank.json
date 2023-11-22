@@ -1,0 +1,11 @@
+{
+    "name": "Mrinank Verma",
+    "image" : "img/authors/mrinank.jpg",
+    "bio": "7 years of total experience, 4 years in Cyber Security, Penetration Testing, and CI/CD. A certified OSCP-PWK (OS-101-51922) Penetration Tester and a certified Practical DevSecOps CDP (CDP91995EE5), who has led Purple Teams, took part in multiple Incidence Responses/Security Audits and architected & developed a CI/CD pipeline for 2 software frameworks. Built major modules for an Automated Malware Analysis System and Endpoint Detection and Response System.",
+    "headline": "Full Stack Development, System Design and CyberSec",
+    "social": [
+        { "linkedin": "https://www.linkedin.com/in/mrinank-verma/" },
+        { "instagram": "https://instagram.com/mrinankverma" },
+        { "github": "https://github.com/v-mrinank" }
+    ]
+}
