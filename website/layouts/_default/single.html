@@ -63,7 +63,7 @@
     
     {{ if or (and (.Params.showTableOfContents | default (.Site.Params.article.showTableOfContents | default false)) (in
     .TableOfContents "<ul")) (.Site.Params.article.showRelatedPosts | default false) }} <div
-      class="order-first sm:max-w-prose lg:ml-auto px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8 lg:min-w-max">
+      class="order-first sm:max-w-prose lg:ml-auto px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8">
       <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky {{ if hasPrefix .Site.Params.header.layout "fixed" -}}
         lg:top-[140px]{{ else }}lg:top-10{{ end }}">
 
@@ -73,7 +73,7 @@
       </div>
       {{ end }}
 
-      <div class="min-w-0 md:min-w-full min-h-0 max-w-fit">
+      <div class="min-w-0 md:max-w-fit min-h-0 max-w-fit">
         
         {{ partial "series.html" . }}
         

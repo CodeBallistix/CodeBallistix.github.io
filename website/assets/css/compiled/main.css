@@ -1333,8 +1333,16 @@ select {
   pointer-events: auto;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .invisible {
   visibility: hidden;
+}
+
+.static {
+  position: static;
 }
 
 .fixed {
@@ -4979,6 +4987,11 @@ body:has(#menu-controller:checked) {
 
   .md\:min-w-full {
     min-width: 100%;
+  }
+
+  .md\:max-w-fit {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
   }
 
   .md\:columns-2 {

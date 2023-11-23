@@ -76,6 +76,6 @@ html{
 
 
 .prose table{
-  width: max-content;
+  width: inherit;
   max-width: inherit;
 }

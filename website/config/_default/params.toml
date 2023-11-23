@@ -48,10 +48,10 @@ disableImageZoom = true
   layoutBackgroundBlur = true # only used when layout equals background
 
 [article]
-  showDate = true
+  showDate = false
   showViews = false
   showLikes = false
-  showDateUpdated = true
+  showDateUpdated = false
   showAuthor = false
   showHero = false
   heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
@@ -72,7 +72,7 @@ disableImageZoom = true
   showTaxonomies = true 
   showAuthorsBadges = true
   showWordCount = true
-  #sharingLinks = [ "linkedin", "twitter", "reddit", "whatsapp", "telegram", "pinterest", "facebook", "email"]
+  sharingLinks = [ "linkedin", "twitter", "reddit", "whatsapp", "telegram", "pinterest", "facebook", "email"]
 
 [list]
   showHero = false
