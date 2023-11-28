@@ -226,3 +226,40 @@ def model_deleted(sender, instance, **kwargs):
     print(log)
     oplogger.info(msg=log)
 {{< / highlight >}}
+
+## Demo
+
+1. Download or clone the code at [{{< icon "github" >}}Django Objects Sync](https://github.com/CodeBallistix/djangoObjectsSync/tree/blog).
+
+1. Switch to the `blog` branch.
+
+1. Install the `pip` requirements from the `REQUIREMENTS.TXT` file.
+
+1. Run the migrations for django.
+
+1. Run the Following Commands in django shell after all migrations have been made to verify functionality.
+
+    ```python3
+    from polls.models import Choice, Question
+    from django.utils  import timezone
+    q = Question(question_text="What's new?", pub_date=timezone.now())
+    q.save()
+    q.choice_set.create(choice_text='Nothing',votes=0)
+    c=q.choice_set.create(choice_text='sky',votes=0)
+    c.delete()
+    c.save()
+    ```
+
+1. The following output will be created and similar logs will be appended to the file at logs/oplog.log.
+    ```txt
+    1698395500.971553 SAVE [{"model": "polls.question", "pk": 1, "fields": {"id": "a3f4729c-b3c2-4264-82a6-8ef7abeaec96", "question_text": "What's new?", "pub_date": "2023-10-27T08:31:40.182Z"}}]
+    1698395542.826431 SAVE [{"model": "polls.choice", "pk": 1, "fields": {"id": "d6d2c0a0-6dfa-4515-875e-f1edfd3dbf01", "question": "a3f4729c-b3c2-4264-82a6-8ef7abeaec96", "choice_text": "Nothing", "votes": 0}}]
+    1698395568.857164 SAVE [{"model": "polls.choice", "pk": 2, "fields": {"id": "d8e48b8d-9ccb-4728-b90c-2833592b6fd2", "question": "a3f4729c-b3c2-4264-82a6-8ef7abeaec96", "choice_text": "sky", "votes": 0}}]
+    1698395573.036682 DELETE [{"model": "polls.choice", "pk": 2, "fields": {"id": "d8e48b8d-9ccb-4728-b90c-2833592b6fd2", "question": "a3f4729c-b3c2-4264-82a6-8ef7abeaec96", "choice_text": "sky", "votes": 0}}]
+    1698395577.627465 SAVE [{"model": "polls.choice", "pk": 3, "fields": {"id": "d8e48b8d-9ccb-4728-b90c-2833592b6fd2", "question": "a3f4729c-b3c2-4264-82a6-8ef7abeaec96", "choice_text": "sky", "votes": 0}}]
+    ```
+
+## Conclusion
+
+Ingestion of these logs is fairly simple, and will be dealt with
+in the next blog in this series.
