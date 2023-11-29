@@ -1,5 +1,5 @@
 ---
-title: "Syncing Objects from a Django Instance to Another"
+title: "Streaming Objects from a Django Instance to Another"
 date: 2023-11-28
 draft: false
 summary: "How to sync Django ORM Model Obects from a instance of Django to another?"
@@ -50,6 +50,7 @@ This solves 2 problems:
   What if the other instance uses [SQLite](https://www.sqlite.org/index.html), which is the default anyway?
 1. Make a custom Operational Log of the changes being made on the database through Django. 
   Stream this Log. This seems interesting.
+1. We can use Django Serializers for translating Django Objects to JSON.
 
 ### Django Signals
 
@@ -65,8 +66,21 @@ This version of Django
 
 [^1]: <https://docs.djangoproject.com/en/4.2/topics/signals/>
 
-Armed with this knowledge, we designed an app that exploits
-this functionality to create such an Operational Log.
+### Django Serializers
+
+> <cite>
+> Django’s serialization framework provides a mechanism for 
+> “translating” Django models into other formats. 
+> Usually these other formats will be text-based and used for 
+> sending Django data over a wire, but it’s possible for a serializer 
+> to handle any format (text-based or not).
+> [^2]
+> </cite>
+
+[^2]: <https://docs.djangoproject.com/en/4.2/topics/serialization/>
+
+So, we can serialize our objects to JSON and ship them through streams
+or store them in text file.
 
 ## Deep Dive
 
@@ -96,7 +110,7 @@ column typed as a `UUIDField`, as can be seen below in code provided.
 > multiple local source application instances. This is not necessary for
 > single writable instance to single readable instance streaming.
 
-{{< highlight python "linenos=table,hl_lines=3,linenostart=1" >}}
+{{< highlight python "linenos=inline,hl_lines=3,linenostart=1" >}}
 class UUIDModel(models.Model):
     pkid = models.BigAutoField(primary_key=True, editable=False)
     id = models.UUIDField(default=uuid.uuid4, editable=False, unique=True)
@@ -108,7 +122,7 @@ class UUIDModel(models.Model):
 Example usage of this model is given in the 
 [{{< icon "github" >}}Django Objects Sync](https://github.com/CodeBallistix/djangoObjectsSync/blob/blog/polls/models.py):
 
-{{< highlight python "linenos=table,hl_lines=1 11-12,linenostart=14" >}}
+{{< highlight python "linenos=inline,hl_lines=1 11-12,linenostart=14" >}}
 class Question(UUIDModel):
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField("date published")
@@ -136,7 +150,7 @@ We can use the built in Django Logging to create a logging
 mechanism for the Operational Log. Example for this is given at
 [{{< icon "github" >}}Django Objects Sync](https://github.com/CodeBallistix/djangoObjectsSync/blob/blog/signalsTest/settings.py):
 
-{{< highlight python "linenos=table,hl_lines=8-10 21-28 36-40,linenostart=126" >}}
+{{< highlight python "linenos=inline,hl_lines=8-10 21-28 36-40,linenostart=126" >}}
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': True,
@@ -196,7 +210,7 @@ the string `DELETE` before the **DELETE** oplogs.
 We create a new file named `signals.py` in the `polls` app for this. View the code for this at 
 [{{< icon "github" >}}Django Objects Sync](https://github.com/CodeBallistix/djangoObjectsSync/blob/blog/polls/signals.py):
 
-{{< highlight python "linenos=table,hl_lines=10 13-14 20 23-24,linenostart=1" >}}
+{{< highlight python "linenos=inline,hl_lines=10 13-14 20 23-24,linenostart=1" >}}
 from django.db.models.signals import post_save, post_delete
 import polls.models
 from django.dispatch import receiver
@@ -211,6 +225,7 @@ def model_saved(sender, instance, **kwargs):
     print(instance.__class__.__name__)
     if instance.__class__.__name__ == 'ProcessedFile' or instance.__class__.__name__ == 'Migration':
         return
+    // serializers explained next
     data = serializers.serialize('json', [instance, ])
     log = f'SAVE {data}'
     print(log)
@@ -221,11 +236,14 @@ def model_deleted(sender, instance, **kwargs):
     print(instance.__class__.__name__)
     if instance.__class__.__name__ == 'ProcessedFile' or instance.__class__.__name__ == 'Migration':
         return
+    // serializers explained next
     data = serializers.serialize('json', [instance, ])
     log = f'DELETE {data}'
     print(log)
     oplogger.info(msg=log)
 {{< / highlight >}}
+
+
 
 ## Demo
 
