@@ -17,7 +17,8 @@ We were working on an online-offline product that required changes done to a loc
 Changes could only be made on the local server and a complete view of the database must be available on the global central server. 
 All of this in Django and python3.
 
-This article, is the 3rd in a [series of 3](/series/django-object-sync/), describes how to ingest objects from operational log of the additions, changes and deletion to a database using Django. We begin by describing the Task.
+This article, is the 3rd in a [series of 3](/series/django-object-sync/), describes how to stream objects from 1 django instance to another,
+with focus on the transfer of objects from 1 server to another.
 {{< /lead >}}
 
 ## TL;DR Summary
@@ -26,7 +27,7 @@ There is none. Take this as a output of a lot of research. No shortcuts here.
 
 ## Introduction
 
-In the previous w articles we developed the capacity to log all 
+In the previous articles we developed the capacity to log all 
 Database Operations to files and consequesntly ingest these files
 on the other instance. The problem now reamins of shupping these 
 lines of logs or objects from one system to another.
