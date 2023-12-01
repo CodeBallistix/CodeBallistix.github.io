@@ -1,0 +1,10 @@
+{
+    "name": "Mohit Rohilla",
+    "image" : "img/authors/mohit.jpg",
+    "bio": "1.5 years experience as Associate Software Engineer with Python and Cloud Engineering. BCA Graduate, currently pursuing MCA.",
+    "headline": "Full Stack Development, System Design and CyberSec",
+    "social": [
+        { "linkedin": "https://www.linkedin.com/initsmohitrohilla/" },
+        { "github": "https://github.com/itsmohitrohilla" }
+    ]
+}
