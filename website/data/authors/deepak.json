@@ -1,9 +1,11 @@
 {
     "name": "Deepak Navaria",
     "image" : "img/authors/deepak.jpg",
-    "bio": "Full Stack Development, Cloud Engineering and Infrastructure Management.",
+    "bio": "As an experienced Software Engineer, I specialize in Distributed Computing, Databases, Web App Development, and Cloud Infrastructure, focusing on efficient, scalable, and secure solutions. My background in Development, Security Operations, and Developer Operations equips me to handle large-scale projects with a focus on security, reliability, and scalability, ensuring systems are resilient against cyber threats.",
     "headline": "Full Stack Development, Cloud Engineering and Infrastructure Management.",
     "social": [
-        { "linkedin": "https://www.linkedin.com/in/deepak-navaria/" }
+        { "linkedin": "https://www.linkedin.com/in/deepak-navaria/" },
+        { "instagram": "https://www.instagram.com/deepaknavaria/" },
+        { "github": "https://github.com/dnavaria" }
     ]
 }
