@@ -14,7 +14,7 @@ authors:
 showAuthorBadges: true
 ---
 {{< lead >}}
-- In this blog, we will delve into an aspect of Python that often puzzles many developers: its **threading model** and the limitations imposed by the **Global Interpreter Lock (GIL)**. Then, we'll shift our focus to multiprocessing, discussing its advantages and when to use it over threading. 
+In this blog, we will delve into an aspect of Python that often puzzles many developers: its **threading model** and the limitations imposed by the **Global Interpreter Lock (GIL)**. Then, we'll shift our focus to multiprocessing, discussing its advantages and when to use it over threading. 
 {{< /lead >}}
 
 ## Section 1: Basics of Threading in Python
