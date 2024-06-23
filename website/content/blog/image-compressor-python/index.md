@@ -20,7 +20,7 @@ As almost everyone of us deals with images, this provides a very useful feature 
 ###### This does not require any programming knowledge whatsoever, however some technical terms might confuse you but you should be fine just following the instructions.
 {{< /lead >}}
 
-### Pre-requiesites 
+### Pre-requisites 
 
 Please Install [Pythons latest version](https://www.python.org/), using python's home page. The installation is really straight forward, the same as installing any other software on your pc.
 
