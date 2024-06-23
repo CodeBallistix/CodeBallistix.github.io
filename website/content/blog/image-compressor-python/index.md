@@ -112,8 +112,8 @@ I'll zoom onto Naruto's hands in both images and take a screen capture.
 
 #### To be honest I see no difference, lets try another area to zoom in.
 
-![Hirata Sensei in original](./Hirata%20Face%20Original.JPG "Hirata Sensei in Original")
-![Hirata Sensei Compressed](./Hirata_face_compressed.JPG "Hirata Sensei Compressed")
+![Hirata Sensei in original](./Hirata%20Face%20Original.JPG "Iruka Sensei in Original")
+![Hirata Sensei Compressed](./Hirata_face_compressed.JPG "Iruka Sensei Compressed")
 
 Looking the same fancy in both.
 
