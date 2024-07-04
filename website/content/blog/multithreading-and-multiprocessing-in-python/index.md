@@ -10,7 +10,7 @@ series: ["Python-Indepth"]
 series_order: 1
 showAuthor: true
 authors:
-  - deepak
+  - mohit
 showAuthorBadges: true
 ---
 {{< lead >}}
