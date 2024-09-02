@@ -32,4 +32,9 @@ Individually we hold the following certifications:
 1. Offensive Security Certified Professional (OSCP) by Offensive Security
 
 ## Contact Us
+
+You may write to us at admin@codeballistix.com.
+
+For messaging and phone calling please use +91-9958277164.
+
 {{< typeform >}}
