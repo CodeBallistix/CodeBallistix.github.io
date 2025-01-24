@@ -9,7 +9,7 @@ series: ["Django Object Sync"]
 series_order: 2
 showAuthor: true
 authors:
-  - mrinank
+  - codeballistix
 showAuthorBadges: true
 ---
 {{< lead >}}

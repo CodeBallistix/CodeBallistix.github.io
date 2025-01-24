@@ -10,7 +10,7 @@ series: ["Markdown"]
 series_order: 1
 showAuthor: true
 authors:
-  - mrinank
+  - codeballistix
 showAuthorBadges: true
 ---
 {{< lead >}}

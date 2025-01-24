@@ -8,7 +8,7 @@ slug: "python-pillow-image-lossless-compress"
 tags: [python,pillow,image,lossless,compression,reduce size, less size, codeb blog, ]
 showAuthor: true
 authors:
-  - naman
+  - codeballistix
 showAuthorBadges: true
 ---
 
