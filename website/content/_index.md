@@ -20,7 +20,7 @@ Every line of code we write at CodeBallistix is aimed at pushing the boundaries 
 
 ## About Us
 
-We are a dedicated team of 3 developers with a combined experience of 24 years, with diverse expertise in **Full Stack Development**, **Cyber Security**, and **Cloud Engineering**.
+A dedicated team of software development professionals, aiming to make software development approachable and affordable for all, with diverse expertise in **Full Stack Development**, **Cyber Security**, and **Cloud Engineering**.
 
 Our star project is **Automated, Modular, and Scalable Malware Analysis System** with multiple pluggable modules. The task pipeline has a multi-level feedback queueing system, telemetry and containerized deployment. Further the data pipeline is scalable and uses PostgreSQL, MongoDB, and BeeGFS.
 
